@@ -1,0 +1,75 @@
+﻿
+.main-container-news-1{
+    width: 100%;
+    margin: 0;
+    padding: 3% 0 3% 0;
+    background: url("../image/bcg_texture.png") repeat left top;
+}
+
+.main-container-content-news-1{
+    width: 70%;
+    margin: 0 15% 0 15%;
+    padding: 2% 0 3% 0;
+    background: url("../image/bcg_white_transparent_1.png") repeat left top;
+    box-shadow: 0 0 20px -7px #564c38;
+    text-align: center;   
+}
+
+.main-container-news-1 h2{
+    margin: 0 10% 0 10%;
+    
+}
+
+.main-container-news-1 p{
+    margin: 0 13% 0 13%;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.main-container-news-1 img{
+    margin: 20px 0 20px 0;
+    max-width: 100%;
+    min-width: 20%;
+    
+}
+
+
+
+
+@media (max-width: 1120px){
+    .main-container-content-news-1{
+        width: 80%;
+        margin: 0 10% 0 10%;
+    }
+    .main-container-news-1 p{
+        margin: 0 8% 0 8%;
+    }
+}
+
+
+
+
+@media (max-width: 750px){
+    .main-container-content-news-1{
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    
+    .main-container-news-1 p{
+        margin: 0 6% 0 6%;
+    }
+}
+
+
+
+
+@media (max-width: 600px){
+    .main-container-content-news-1{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .main-container-news-1 p{
+        margin: 0 3% 0 3%;
+    }
+}

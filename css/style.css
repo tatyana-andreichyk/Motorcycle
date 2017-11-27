@@ -1,0 +1,323 @@
+﻿body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", sans-serif;
+    /* background: url("../image/bcg_texture.png") repeat left top; */
+    color: #231f20;  
+}
+
+.clearfix::after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+header{
+    width: 100%;
+    background: url("../image/bcg_texture.png") repeat left top, url("../image/header_moto.jpg") no-repeat left top / 100%;
+}
+
+.logo{
+    width: 40%;
+    margin: 1% 30%;
+}
+
+nav{
+    width: 60%;
+    left: 20%;
+    padding-bottom: 25px;
+    position: relative;
+    line-height: 2em;
+}
+
+nav a{
+    position: relative;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.08em;
+    color: #fff;
+    padding: 0 0 2px 0;
+    margin: 0 4.8%;
+}
+
+
+nav a:hover::after {
+    right: 0px;
+}
+
+nav a::after {
+    content: '';
+    transition: right 1s cubic-bezier(0.455, 1, 0.515, 1);
+    position: absolute;
+    height: 3px;
+    left: 0px;
+    bottom: 0px;
+    right: 100%;
+    background-color: #fff;
+}
+
+
+.main-page-news {
+    width: 100%;
+    padding: 0;
+    background: url("../image/bcg_texture.png") repeat left top;
+    
+}
+
+.main-page-news article{
+    display: inline-block;
+    width: 40%;
+    padding: 20px;
+    margin: 3%;
+    background: url("../image/bcg_white_transparent_1.png") repeat left top;
+    border: solid #fff 2px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -7px #564c38;   
+}
+
+.article-left{
+    float: left;
+}
+
+.article-right{
+    float: right;
+}
+
+.main-page-news h3{
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #564c38;
+    
+}
+
+.main-page-news img{
+    float: left;
+    width: 60%;
+    margin: 0 20px 20px 0;
+}
+
+
+.main-page-news p{
+    margin: 20px 0 20px 0;
+    text-indent: 25px;
+}
+
+.main-page-news p:first-of-type{
+    font-style: oblique;
+}
+
+
+
+.main-page-news a{
+    display: block;
+    width: 120px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #493f28;
+    border-radius: 5px;
+    border: solid #cdc3a9 2px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.main-page-news a:hover{
+    background-color: #cdc3a9;
+    border: solid #231f20 2px;
+    color: #231f20;
+}
+
+
+.contact-container{
+    float: left;
+    width: 100%;
+    background: url("../image/bcg_texture.png") repeat left top, url("../image/bcg_brown_tansparent.png") repeat left top;
+}
+
+.contact-container h3{
+    width: 20%;
+    margin: 5% auto 2% auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.contact-container form{
+    width: 35%;
+    margin: 2% auto 5% auto;
+}
+
+
+.contact-container-row {
+    display: block;
+    width: 95%;
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 10px 0;
+    background: url("../image/bcg_white_transparent_2.png") repeat left top;
+    border: solid #cdc3a9 2px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0px #564c38;
+}
+
+.text-area{
+    max-width: 95%;
+    height: 170px;
+}
+
+
+.contact-container-row:focus{
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px 1px #564c38;
+    border: solid #231f20 2px;
+}
+
+
+
+.contact-container-button{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #493f28;
+    border-radius: 3px;
+    border: solid #cdc3a9 2px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+
+.contact-container-button:hover{
+    outline: none;
+    background-color: #cdc3a9;
+    border: solid #231f20 2px;
+    color: #231f20;
+    cursor: pointer;
+}
+
+
+footer{
+    display: block;
+    float: left;
+    width: 100%;
+    background: url("../image/bcg_texture.png") repeat left top, #1d1708;
+}
+
+footer img{
+    display: block;
+    float: left;
+    width: 15%;
+    margin: 40px 0 1% 2%;
+    min-width: 150px;
+}
+
+footer p{
+    display: block;
+    float: left;
+    margin: 40px 0 3% 26.5%;
+    text-align: center;
+    color: #fff;
+}
+
+footer  ul{
+    display: block;
+    float: right;
+    margin-right: 2%;
+    list-style-type: none;
+}
+
+footer a{
+    text-decoration: none;
+    line-height: 1.3em;
+    color: #fff;
+}
+
+footer a:hover {
+    border-bottom: solid #fff 1px;
+}
+
+
+
+
+
+@media (max-width: 1120px){
+    
+    nav a{
+        letter-spacing: 0.2em;
+    }
+    
+    .main-page-news article{
+        margin: 2%;
+    }
+
+    .contact-container form{
+        width: 40%;
+        margin: 2% auto 5% auto;
+    }
+
+    footer p{
+        margin-left: 25%;
+    }
+}
+
+
+
+
+@media (max-width: 750px){
+    
+    .main-page-news article{
+        width: 90%;
+        float: left;
+        margin: 2% 0 2% 0;
+    }
+
+    .contact-container-button{
+        margin-left: 1%;
+    }
+
+
+    .contact-container form{
+        width: 60%;
+        margin: 2% auto 5% auto;
+    }
+
+    footer p{
+        margin-left: 17%;
+    }
+}
+
+
+
+
+@media (max-width: 600px){
+    
+    .contact-container-button{
+        margin-left: 3%;
+    }
+    
+    footer img{
+        width: 40%;
+        margin: 5% 30% 5% 30%;
+    }
+
+    footer p{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    footer  ul{
+        width: 20%;
+        margin: 5% 40% 5% 40%;
+    }
+    
+}
+
+
